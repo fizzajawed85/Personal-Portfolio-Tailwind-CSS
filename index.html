@@ -17,10 +17,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-      <!-- Custom Css  -->
+    <!-- AOS CSS (in <head>) -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom Css  -->
     <link rel="stylesheet" href="./style.css">
 
-      <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -248,141 +251,259 @@
     </div>
   </section>
 
- <!-- Project Section -->
-<section class="max-w-7xl mx-auto px-4 py-8 text-white">
-  <h2 class="text-4xl font-bold font-[Poppins] leading-tight text-center bg-clip-text text-transparent bg-gradient-to-r from-[#f42a8b] to-[#1f89db] mb-10">
-    My Projects
+  <!-- Project Section -->
+ <section class="max-w-7xl mx-auto px-4 py-12 mt-5 mb-5">
+  <h2 class="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-[#f42a8b] to-[#1f89db] mb-12 font-[Poppins]">
+    PORTFOLIO
   </h2>
 
-  <!-- Hidden checkbox to toggle projects -->
-  <input type="checkbox" id="toggleProjects" class="hidden peer" />
-
-  <!-- Projects grid (Visible Projects) -->
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-    <!-- Repeat Project 1–6 -->
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_1.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+    <!-- Project Card -->
+    <div class="relative group overflow-hidden rounded-xl shadow-xl bg-[#1a1f2e] glow-border animate-fadeUpZoom">
+      <img src="images/projects/card_1.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <a href="https://academic-website-bootstrap.vercel.app/" class="text-white font-medium text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition">
+          Live Preview
+        </a>
       </div>
     </div>
 
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_2.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+    <div class="relative group overflow-hidden rounded-xl shadow-xl bg-[#1a1f2e] glow-border animate-fadeUpZoom">
+      <img src="images/projects/card_2.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <a href="https://next-js-milestone-02-multipage-website-tailwind.vercel.app/" class="text-white font-medium text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition">
+          Live Preview
+        </a>
       </div>
     </div>
 
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_3.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+    <div class="relative group overflow-hidden rounded-xl shadow-xl bg-[#1a1f2e] glow-border animate-fadeUpZoom">
+      <img src="images/projects/card_3.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <a href="https://car-rental-website-seven-chi.vercel.app/" class="text-white font-medium text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition">
+          Live Preview
+        </a>
       </div>
     </div>
 
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_4.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+    <div class="relative group overflow-hidden rounded-xl shadow-xl bg-[#1a1f2e] glow-border animate-fadeUpZoom">
+      <img src="images/projects/card_4.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <a href="https://food-chow-website-html-css.vercel.app/" class="text-white font-medium text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition">
+          Live Preview
+        </a>
       </div>
     </div>
 
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_5.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+    <div class="relative group overflow-hidden rounded-xl shadow-xl bg-[#1a1f2e] glow-border animate-fadeUpZoom">
+      <img src="images/projects/card_5.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <a href="https://launch-page-creative-landing-page-bootstrap.vercel.app/" class="text-white font-medium text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition">
+          Live Preview
+        </a>
       </div>
     </div>
 
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_6.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+    <div class="relative group overflow-hidden rounded-xl shadow-xl bg-[#1a1f2e] glow-border animate-fadeUpZoom">
+      <img src="images/projects/card_6.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <a href="https://next-js-milestone-multipage-portfolio-tailwind.vercel.app/" class="text-white font-medium text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition">
+          Live Preview
+        </a>
       </div>
     </div>
-    
-    <!-- Repeat same for Project 2–6 -->
-    <!-- Add more cards like above as needed -->
+
+    <div class="relative group overflow-hidden rounded-xl shadow-xl bg-[#1a1f2e] glow-border animate-fadeUpZoom">
+      <img src="images/projects/card_7.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <a href="https://olx-clone-html-css.vercel.app/" class="text-white font-medium text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition">
+          Live Preview
+        </a>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-xl bg-[#1a1f2e] glow-border animate-fadeUpZoom">
+      <img src="images/projects/card_8.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <a href="https://apple-website-clone-html-css.vercel.app/" class="text-white font-medium text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition">
+          Live Preview
+        </a>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded-xl shadow-xl bg-[#1a1f2e] glow-border animate-fadeUpZoom">
+      <img src="images/projects/card_9.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <a href="https://uiux-hackaton-car-rental-marketplace.vercel.app/" class="text-white font-medium text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition">
+          Live Preview
+        </a>
+      </div>
+    </div>
+
+    <!-- Repeat this card for other projects -->
+   
   </div>
 
-  <!-- Hidden Projects Wrapper (Animated Expansion) -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 transition-all duration-700 ease-in-out max-h-0 overflow-hidden peer-checked:max-h-[2000px] peer-checked:mt-8">
-    <!-- Project 7 -->
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_7.png" alt="Project 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
-      </div>
-    </div>
-    <!-- Project 8 -->
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_8.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
-      </div>
-    </div>
+  <!-- Gradient View More Button -->
+<div class="flex justify-center mt-12 mb-5">
+  <a href="https://github.com/fizzajawed85" target="_blank" rel="noopener noreferrer"
+     class="inline-block border border-transparent rounded-full px-10 py-3 font-semibold text-base text-white font-[Poppins] bg-gradient-to-r from-[#1f89db] to-[#f42a8b] hover:opacity-90 hover:scale-105 shadow-lg transition-all duration-300 transform">
+    VIEW MORE
+  </a>
+</div>
 
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_9.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
-      </div>
-    </div>
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_10.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
-      </div>
-    </div>
+</section>
 
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_11.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+<!-- Testimonals Section -->
+
+<section class="font-[Poppins] px-4 py-16 mt-5 mb-5 max-w-7xl mx-auto bg-[#161b29] rounded-lg">
+  <div class="text-center" data-aos="fade-up" data-aos-duration="800">
+    <h2 class="text-4xl bg-gradient-to-r from-[#f42a8b] to-[#1f89db] bg-clip-text text-transparent font-bold mb-4">What Our Clients Say</h2>
+    <p class="text-gray-400 mb-12">Testimonials from our happy clients worldwide</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-[#0d111c] p-4 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl max-w-md mx-auto"
+           data-aos="fade-right" data-aos-delay="100">
+        <p class="text-sm text-gray-300 mb-4">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et metus nec lorem dictum.”
+        </p>
+        <div class="flex items-center gap-3 mb-2">
+          <img src="images/testimonals/t_1.jpg" alt="Sarah Williams" class="w-10 h-10 rounded-full border-2 border-[#1f89db]" />
+          <div class="text-left">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="font-semibold hover:underline text-white">
+              Sarah Williams
+            </a>
+            <span class="text-xs text-gray-400 block">Product Manager, XCorp</span>
+          </div>
+        </div>
+        <p class="text-xs text-gray-500 italic">Commit: Lorem ipsum dolor consectetur adipisicing.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#0d111c] p-4 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl max-w-md mx-auto"
+           data-aos="zoom-in" data-aos-delay="200">
+        <p class="text-sm text-gray-300 mb-4">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec turpis feugiat, commodo lorem at, fermentum augue.”
+        </p>
+        <div class="flex items-center gap-3 mb-2">
+          <img src="images/testimonals/t_3.jpg" alt="James Lee" class="w-10 h-10 rounded-full border-2 border-[#f42a8b]" />
+          <div class="text-left">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="font-semibold hover:underline text-white">
+              James Lee
+            </a>
+            <span class="text-xs text-gray-400 block">CTO, NovaTech</span>
+          </div>
+        </div>
+        <p class="text-xs text-gray-500 italic">Commit: Lorem ipsum dolor consectetur adipisicing.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#0d111c] p-4 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl max-w-md mx-auto"
+           data-aos="fade-left" data-aos-delay="300">
+        <p class="text-sm text-gray-300 mb-4">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at justo suscipit, at bibendum ex pretium.”
+        </p>
+        <div class="flex items-center gap-3 mb-2">
+          <img src="images/testimonals/t_2.jpg" alt="Amina Khan" class="w-10 h-10 rounded-full border-2 border-[#1f89db]" />
+          <div class="text-left">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="font-semibold hover:underline text-white">
+              Amina Khan
+            </a>
+            <span class="text-xs text-gray-400 block">CEO, BrightIdeas</span>
+          </div>
+        </div>
+        <p class="text-xs text-gray-500 italic">Commit: Lorem ipsum dolor consectetur adipisicing.</p>
       </div>
     </div>
-
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_12.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
-      </div>
-    </div>
-
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_13.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
-      </div>
-    </div>
-
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_14.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
-      </div>
-    </div>
-
-    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
-      <img src="images/projects/card_15.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
-      </div>
-    </div>
-    
-    <!-- Repeat Project similarly -->
-  </div>
-
-  <!-- Toggle Button -->
-  <div class="flex justify-center mt-12">
-    <label for="toggleProjects"
-      class="cursor-pointer px-6 py-2 font-[Poppins] rounded-full text-lg bg-gradient-to-r from-[#f42a8b] to-[#1f89db] hover:brightness-110 transition duration-300 animate-gradient-x select-none">
-      VIEW MORE
-    </label>
   </div>
 </section>
 
+<!-- Contact Section -->
+
+   <section class="min-h-screen flex items-center justify-center px-4 py-10 mt-5 mb-5">
+    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-10 ">
+
+      <!-- Left Info Section -->
+      <div class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#f42a8b] to-[#1f89db] bg-clip-text text-transparent font-[Poppins]">
+          DO YOU HAVE A PROJECT TO DISCUSS?
+        </h2>
+        <p class="text-lg flex items-center gap-2">GET IN TOUCH <span>💬</span></p>
+
+        <div>
+          <h4 class="font-semibold text-lg">CONTACT</h4>
+          <p class="text-[#1f89db]">fizzajawed012@gmail.com</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-lg">SOCIAL MEDIA</h4>
+          <div class="flex gap-4 text-xl mt-2">
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn" class="hover:text-[#1f89db] transition">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="hover:text-[#1f89db] transition">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" class="hover:text-[#f42a8b] transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp" class="hover:text-green-500 transition">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://github.com/your-username" target="_blank" aria-label="GitHub" class="hover:text-gray-400 transition">
+             <i class="fab fa-github"></i>
+            </a>
+
+            <a href="mailto:fizzajawed012@gmail.com" target="_blank" aria-label="Email" class="hover:text-pink-500 transition">
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <form class="space-y-6 font-[Poppins]">
+        <div>
+          <label class="block mb-1">Name</label>
+          <input type="text" required placeholder="Your name"
+            class="w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#f42a8b] transition" />
+        </div>
+
+        <div>
+          <label class="block mb-1">Email</label>
+          <input type="email" required placeholder="Your email"
+            class="w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#1f89db] transition" />
+        </div>
+
+        <div>
+          <label class="block mb-1">Message</label>
+          <textarea rows="4" required placeholder="Your message"
+            class="w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#f42a8b] transition"></textarea>
+        </div>
+
+        <button type="submit"
+        class="inline-block border border-transparent rounded-full px-6 py-2 font-medium text-sm text-white bg-gradient-to-r from-[#1f89db] to-[#f42a8b] hover:opacity-90 shadow-lg">
+        SEND
+      </button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="bg-[#0d111c] text-white text-center py-6 border-t border-gray-800 font-[Poppins]">
+  <p class="text-sm font-bold text-gray-400">
+    © 2024 – All rights reserved, web design and development – <span class="text-[#1f89db] font-[Poppins]">FIZZA JAWED</span>
+  </p>
+</footer>
+
+
 </body>
+ <!-- AOS library script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./index.js"></script>
 </html>
+

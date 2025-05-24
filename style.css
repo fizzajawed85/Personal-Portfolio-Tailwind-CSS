@@ -1,57 +1,59 @@
 body {
-  font-family: "Poppins", sans-serif;
-}
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
 
-/* Skills Section Styling */
-.skill-card {
-  background-color: #1a202c;
-  padding: 20px;
-  border-radius: 20px;
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transform-style: preserve-3d;
-}
+  /* Skills Section Styling */
+  .skill-card {
+    background-color: #1a202c;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform-style: preserve-3d;
+  }
 
-.skill-card:hover {
-  transform: rotateY(15deg) scale(1.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
+  .skill-card:hover {
+    transform: rotateY(15deg) scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
 
-.skill-card .icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
-}
+  .skill-card .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
 
-.skill-card:hover .icon {
-  transform: rotate(360deg);
-}
+  .skill-card:hover .icon {
+    transform: rotate(360deg);
+  }
 
-.skill-card span {
-  display: block;
-  font-size: 1.1rem;
-  color: #f0f0f0;
-  font-weight: bold;
-  margin-top: 8px;
-  transition: color 0.3s ease;
-}
+  .skill-card span {
+    display: block;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: color 0.3s ease;
+  }
 
-.skill-card:hover span {
-  color: #f42a8b;
-}
+  .skill-card:hover span {
+    color: #f42a8b;
+  }
 
-/* Body and Text Styling */
-h2 {
-  color: transparent;
-  background-image: linear-gradient(to right, #f42a8b, #1f89db);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+  /* Body and Text Styling */
+  h2 {
+    color: transparent;
+    background-image: linear-gradient(to right, #f42a8b, #1f89db);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 
-@keyframes slide {
+
+  @keyframes slide {
   0% {
     transform: translateX(0%);
   }
@@ -64,44 +66,67 @@ h2 {
   animation: slide 30s linear infinite;
 }
 
-.hidden-projects {
-  max-height: 0;
+  /* Fade-up + zoom animation */
+    @keyframes fadeUpZoom {
+      0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .animate-fadeUpZoom {
+      animation: fadeUpZoom 0.6s ease-out both;
+    }
+.glow-border {
+  position: relative;
+  display: inline-block;
   overflow: hidden;
-  transition: max-height 0.6s ease-in-out;
+  z-index: 0;
+  transition: transform 0.3s ease;
 }
 
-input[type="checkbox"]:checked ~ .hidden-projects {
-  max-height: 2000px;
+.glow-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #f42a8b, #1f89db);
+  z-index: -1;
+  border-radius: inherit;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-input[type="checkbox"]:checked ~ .view-toggle label span::after {
-  content: "View Less";
+.glow-border:hover::before {
+  opacity: 1;
 }
 
-.view-toggle label span::after {
-  content: "View More";
-}
-
-/* Smooth height animation */
-.transition-height {
-  transition: max-height 0.6s ease-in-out;
+.glow-border:hover {
+  transform: scale(1.05);
 }
 
 /* Responsive Grid */
-@media (min-width: 640px) {
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
+  @media (min-width: 640px) {
+    .grid-cols-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
-}
 
-@media (min-width: 768px) {
-  .grid-cols-5 {
-    grid-template-columns: repeat(5, 1fr);
+  @media (min-width: 768px) {
+    .grid-cols-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
-}
 
-@media (min-width: 1024px) {
-  .grid-cols-6 {
-    grid-template-columns: repeat(6, 1fr);
+  @media (min-width: 1024px) {
+    .grid-cols-6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
-}
