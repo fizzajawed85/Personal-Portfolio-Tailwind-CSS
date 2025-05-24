@@ -44,6 +44,7 @@
             <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
               <a href="#" class="text-blue-400">HOME</a>
               <a href="#" class="hover:text-blue-400">SERVICES</a>
+              <a href="#" class="hover:text-blue-400">SKILLS</a>
               <a href="#" class="hover:text-blue-400">PORTFOLIO</a>
               <a href="#" class="hover:text-blue-400">BLOG</a>
               <a href="#" class="hover:text-blue-400">TESTIMONALS</a>
@@ -56,6 +57,7 @@
           <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col space-y-3 text-sm font-medium">
             <a href="#" class="text-blue-400">HOME</a>
             <a href="#" class="hover:text-blue-400">SERVICES</a>
+            <a href="#" class="hover:text-blue-400">SKILLS</a>
             <a href="#" class="hover:text-blue-400">PORTFOLIO</a>
             <a href="#" class="hover:text-blue-400">BLOG</a>
             <a href="#" class="hover:text-blue-400">TESTIMONALS</a>
@@ -89,7 +91,7 @@
   <!-- Main Content -->
   <section class="max-w-6xl mx-auto px-6 py-12 font-[Poppins]">
     <!-- Section Title -->
-    <h2 class="text-3xl md:text-4xl font-semibold mb-16 text-transparent bg-clip-text bg-gradient-to-r from-[#f42a8b] to-[#1f89db] text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-16 text-transparent bg-clip-text bg-gradient-to-r from-[#f42a8b] to-[#1f89db] text-center">
       MY SERVICES
     </h2>
 
@@ -145,11 +147,11 @@
         <!-- Card 4 -->
         <div class="border border-white/10 p-6 rounded-2xl bg-white/5 hover:opacity-90 transition-all">
           <div class="flex items-start gap-4">
-            <i class="fas fa-tools text-blue-400 text-2xl mt-1"></i>
+            <i class="fas fa-sync-alt text-blue-400 text-2xl mt-1"></i>
             <div>
-              <h3 class="text-xl font-semibold mb-2">Performance Tuning</h3>
+              <h3 class="text-xl font-semibold mb-2">Website Maintenance</h3>
               <p class="text-sm">
-                Optimize loading speed, reduce bundle sizes, and enhance performance for better user experience.
+               Keeping websites updated, fixing bugs, and ensuring everything runs smoothly and stays user-friendly.
               </p>
             </div>
           </div>
@@ -159,10 +161,228 @@
     </div>
   </section>
 
+  <!-- Skills Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold mb-6 font-[Poppins]">
+        Technologies I Work With
+      </h2>
+      <p class="text-lg max-w-3xl mx-auto mb-12">
+        Here are the core tools and technologies I use in my development and design workflows.
+      </p>
 
-  
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-10">
+        <!-- HTML -->
+        <div class="skill-card">
+          <img src="./images/icons/html-5.svg" alt="HTML" class="icon" />
+          <span>HTML</span>
+        </div>
 
-      
+        <!-- CSS -->
+        <div class="skill-card">
+          <img src="./images/icons/css-3.svg" alt="CSS" class="icon" />
+          <span>CSS</span>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card">
+          <img src="./images/icons/javascript.svg" alt="JavaScript" class="icon" />
+          <span>JavaScript</span>
+        </div>
+
+        <!-- TypeScript -->
+        <div class="skill-card">
+          <img src="./images/icons/typescript.svg" alt="TypeScript" class="icon" />
+          <span>TypeScript</span>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card">
+          <img src="./images/icons/python.svg" alt="Python" class="icon" />
+          <span>Python</span>
+        </div>
+
+        <!-- Next.js -->
+        <div class="skill-card">
+          <img src="./images/icons/nextjs.svg" alt="Next.js" class="icon" />
+          <span>Next.js</span>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="skill-card">
+          <img src="./images/icons/tailwindcss.svg" alt="Tailwind CSS" class="icon" />
+          <span>Tailwind CSS</span>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="skill-card">
+          <img src="./images/icons/bootstrap.svg" alt="Bootstrap" class="icon" />
+          <span>Bootstrap</span>
+        </div>
+
+        <!-- Figma -->
+        <div class="skill-card">
+          <img src="./images/icons/figma.svg" alt="Figma" class="icon" />
+          <span>Figma</span>
+        </div>
+
+        <!-- Git -->
+        <div class="skill-card">
+          <img src="./images/icons/git.svg" alt="Git" class="icon" />
+          <span>Git</span>
+        </div>
+
+        <!-- Firebase -->
+        <div class="skill-card">
+          <img src="./images/icons/firebase.png" alt="Firebase" class="icon" />
+          <span>Firebase</span>
+        </div>
+
+        <!-- Vercel -->
+        <div class="skill-card">
+          <img src="./images/icons/vercel.svg" alt="Vercel" class="icon" />
+          <span>Vercel</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- Project Section -->
+<section class="max-w-7xl mx-auto px-4 py-8 text-white">
+  <h2 class="text-4xl font-bold font-[Poppins] leading-tight text-center bg-clip-text text-transparent bg-gradient-to-r from-[#f42a8b] to-[#1f89db] mb-10">
+    My Projects
+  </h2>
+
+  <!-- Hidden checkbox to toggle projects -->
+  <input type="checkbox" id="toggleProjects" class="hidden peer" />
+
+  <!-- Projects grid (Visible Projects) -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <!-- Repeat Project 1–6 -->
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_1.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_2.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_3.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_4.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_5.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_6.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+    
+    <!-- Repeat same for Project 2–6 -->
+    <!-- Add more cards like above as needed -->
+  </div>
+
+  <!-- Hidden Projects Wrapper (Animated Expansion) -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 transition-all duration-700 ease-in-out max-h-0 overflow-hidden peer-checked:max-h-[2000px] peer-checked:mt-8">
+    <!-- Project 7 -->
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_7.png" alt="Project 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+    <!-- Project 8 -->
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_8.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_9.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_10.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_11.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_12.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_13.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_14.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+
+    <div class="relative aspect-[4/3] bg-[#1a1f2e] rounded-lg overflow-hidden shadow-lg group cursor-pointer">
+      <img src="images/projects/card_15.png" alt="Project 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <a href="#" class="text-white font-semibold text-lg px-4 py-2 bg-gradient-to-r from-[#fca5a5] to-[#93c5fd] rounded-md hover:brightness-110 transition duration-200">Live Preview</a>
+      </div>
+    </div>
+    
+    <!-- Repeat Project similarly -->
+  </div>
+
+  <!-- Toggle Button -->
+  <div class="flex justify-center mt-12">
+    <label for="toggleProjects"
+      class="cursor-pointer px-6 py-2 font-[Poppins] rounded-full text-lg bg-gradient-to-r from-[#f42a8b] to-[#1f89db] hover:brightness-110 transition duration-300 animate-gradient-x select-none">
+      VIEW MORE
+    </label>
+  </div>
+</section>
+
 </body>
 <script src="./index.js"></script>
 </html>

@@ -1,3 +1,107 @@
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Skills Section Styling */
+.skill-card {
+  background-color: #1a202c;
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.skill-card:hover {
+  transform: rotateY(15deg) scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .icon {
+  transform: rotate(360deg);
+}
+
+.skill-card span {
+  display: block;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  font-weight: bold;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+.skill-card:hover span {
+  color: #f42a8b;
+}
+
+/* Body and Text Styling */
+h2 {
+  color: transparent;
+  background-image: linear-gradient(to right, #f42a8b, #1f89db);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 30s linear infinite;
+}
+
+.hidden-projects {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+}
+
+input[type="checkbox"]:checked ~ .hidden-projects {
+  max-height: 2000px;
+}
+
+input[type="checkbox"]:checked ~ .view-toggle label span::after {
+  content: "View Less";
+}
+
+.view-toggle label span::after {
+  content: "View More";
+}
+
+/* Smooth height animation */
+.transition-height {
+  transition: max-height 0.6s ease-in-out;
+}
+
+/* Responsive Grid */
+@media (min-width: 640px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
